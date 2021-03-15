@@ -1,0 +1,28 @@
+.pricing {
+  max-width: 54rem;
+  margin: auto;
+  padding: 4.5rem;
+  background-color: $white;
+  border-radius: 5px;
+
+  // DETAILS
+  &__details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2.4rem;
+
+    p:first-child {
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+  }
+
+  &__cost {
+    font-size: 4rem;
+    font-weight: 800;
+    color: $darkBlue;
+  }
+
+  // INPUT RANGE
+}
