@@ -1,0 +1,48 @@
+/* ---------------------------------- Reset --------------------------------- */
+html {
+  font-size: 62.5%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background-color: #fafbff;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Manrope", sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #858fad;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: #293356;
+}
+
+/* --------------------------------- Spacing -------------------------------- */
+.container {
+  max-width: 37.5%;
+}
+
+/* ------------------------------- Background ------------------------------- */
+.background {
+  width: 100vw;
+  height: 55vh;
+  background-image: url(/images/bg-pattern.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right right;
+  border: none;
+}
+/*# sourceMappingURL=style.css.map */
