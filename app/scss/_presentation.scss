@@ -8,12 +8,20 @@
   justify-content: center;
   align-items: center;
 
-  width: 39.5rem;
+  max-width: 39.5rem;
   height: 14.5rem;
   margin: 5.4rem auto;
   margin-top: 6.7rem;
 
-  h1 {
-    margin-bottom: 1.2rem;
+  @include breakpoint-down(small) {
+    max-width: 32.6rem;
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    p {
+      font-size: 1.3rem;
+    }
   }
 }

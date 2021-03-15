@@ -28,14 +28,10 @@ body {
 
 h1 {
   margin: 0;
+  margin-bottom: 1.2rem;
   font-size: 2.8rem;
   font-weight: 800;
   color: #293356;
-}
-
-/* --------------------------------- Spacing -------------------------------- */
-.container {
-  max-width: 37.5%;
 }
 
 /* ------------------------------- Background ------------------------------- */
@@ -66,13 +62,21 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 39.5rem;
+  max-width: 39.5rem;
   height: 14.5rem;
   margin: 5.4rem auto;
   margin-top: 6.7rem;
 }
 
-.presentation h1 {
-  margin-bottom: 1.2rem;
+@media (max-width: 25.5625em) {
+  .presentation {
+    max-width: 32.6rem;
+  }
+  .presentation h1 {
+    font-size: 2rem;
+  }
+  .presentation p {
+    font-size: 1.3rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */
