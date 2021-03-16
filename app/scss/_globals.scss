@@ -42,3 +42,16 @@ h1 {
   background-position: right right;
   border: none;
 }
+
+/* --------------------------------- Layout --------------------------------- */
+
+.flex {
+  display: flex;
+
+  @include breakpoint-down(medium) {
+    order: 3;
+    flex-direction: column;
+    justify-content: space space-between;
+    align-items: center;
+  }
+}

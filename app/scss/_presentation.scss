@@ -10,12 +10,13 @@
 
   max-width: 39.5rem;
   height: 14.5rem;
-  margin: 5.4rem auto;
+  margin: 7.1rem auto;
   margin-top: 6.7rem;
 
-  @include breakpoint-down(small) {
-    max-width: 32.6rem;
-
+  @include breakpoint-down(medium) {
+    max-width: 35rem;
+    margin-top: 5.6rem;
+    margin-bottom: 3.2rem;
     h1 {
       font-size: 2rem;
     }
