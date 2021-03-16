@@ -47,4 +47,11 @@ h1 {
 
 .flex {
   display: flex;
+
+  @include breakpoint-down(medium) {
+    order: 3;
+    flex-direction: column;
+    justify-content: space space-between;
+    align-items: center;
+  }
 }

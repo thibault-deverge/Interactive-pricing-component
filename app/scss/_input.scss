@@ -3,6 +3,10 @@ input[type="range"] {
   -webkit-appearance: none;
   margin-bottom: 4rem;
   width: 100%;
+
+  @include breakpoint-down(medium) {
+    order: 1;
+  }
 }
 input[type="range"]:focus {
   outline: none;

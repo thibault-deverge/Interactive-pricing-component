@@ -6,6 +6,18 @@
   border-radius: 5px;
   box-shadow: 5px 3px 20px rgba(#000, 0.1);
 
+  @include breakpoint-down(medium) {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 35rem;
+    padding: 3.4rem 2.4rem;
+  }
+
+  @include breakpoint-down(small) {
+    max-width: 32.7rem;
+  }
+
   // DETAILS
   &__details {
     display: flex;
@@ -17,12 +29,25 @@
       font-weight: 800;
       letter-spacing: 2px;
     }
+
+    @include breakpoint-down(medium) {
+      flex-direction: column;
+
+      p:first-child {
+        margin-bottom: 2rem;
+        font-size: 1.2rem;
+      }
+    }
   }
 
   &__cost {
     font-size: 4rem;
     font-weight: 800;
     color: $darkBlue;
+
+    @include breakpoint-down(medium) {
+      font-size: 3.2rem;
+    }
   }
 
   // BILLING
@@ -79,6 +104,20 @@
         background-color: $white;
       }
     }
+
+    @include breakpoint-down(medium) {
+      order: 2;
+      margin-bottom: 3.5rem;
+      // width: 100%;
+
+      span {
+        margin-right: 0.8rem;
+      }
+
+      button {
+        margin-right: 0.8rem;
+      }
+    }
   }
 
   &__discount {
@@ -88,6 +127,14 @@
     background-color: $lightGrayRed;
     color: $lightRed;
     border-radius: 15px;
+
+    &--desktop {
+      margin-right: 0 !important;
+
+      @include breakpoint-down(medium) {
+        display: none;
+      }
+    }
   }
 
   hr {
@@ -98,6 +145,13 @@
     color: $lightGrayishBlue1;
     border: none;
     transform: translateX(-45px);
+
+    @include breakpoint-down(medium) {
+      order: 3;
+      width: 100%;
+      margin-bottom: 2.4rem;
+      transform: translateX(0px);
+    }
   }
 
   // RESUME & CTA
@@ -122,12 +176,31 @@
         text-align: left;
       }
     }
+
+    @include breakpoint-down(medium) {
+      margin-bottom: 2.2rem;
+      align-self: center;
+
+      img {
+        // margin-right: 0;
+      }
+
+      p {
+        text-align: center;
+      }
+    }
   }
 
   &__cta {
     margin: auto;
-    justify-content: flex-end;
-    align-self: center;
+
+    @include breakpoint-down(medium) {
+      margin-left: 6.5rem;
+    }
+
+    @include breakpoint-down(small) {
+      margin-left: 5.3rem;
+    }
 
     button {
       padding: 1.3rem 4.6rem;
