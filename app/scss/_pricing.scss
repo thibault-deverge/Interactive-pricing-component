@@ -1,7 +1,7 @@
 .pricing {
   max-width: 54rem;
   margin: auto;
-  padding: 4.5rem;
+  padding: 3.8rem 4.5rem;
   background-color: $white;
   border-radius: 5px;
 
@@ -24,5 +24,79 @@
     color: $darkBlue;
   }
 
-  // INPUT RANGE
+  // BILLING
+  &__billing {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 4.4rem;
+
+    span {
+      font-size: 1.2rem;
+      margin-right: 1.6rem;
+    }
+
+    button {
+      position: relative;
+      width: 4.3rem;
+      height: 2.2rem;
+      margin-right: 1.6rem;
+      background-color: $lightGrayishBlue1;
+      border: 0px;
+      border-radius: 15px;
+      cursor: pointer;
+
+      &:focus {
+        outline: none;
+      }
+
+      &::before {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        bottom: 4px;
+        right: 2.5rem;
+        width: 1.4rem;
+        height: 1.4rem;
+        border-radius: 50%;
+        background-color: $white;
+      }
+
+      &::after {
+        content: "";
+        display: none;
+        position: absolute;
+        top: 4px;
+        left: 2.5rem;
+        bottom: 4px;
+        right: 4px;
+        width: 1.4rem;
+        height: 1.4rem;
+        border-radius: 50%;
+        background-color: $white;
+      }
+    }
+  }
+
+  &__discount {
+    padding: 0.3rem 0.8rem;
+    font-size: 1rem;
+    font-weight: 800;
+    background-color: $lightGrayRed;
+    color: $lightRed;
+    border-radius: 15px;
+  }
+
+  hr {
+    width: 54rem;
+    height: 1px;
+    background-color: $lightGrayishBlue1;
+    color: $lightGrayishBlue1;
+    border: none;
+    transform: translateX(-45px);
+  }
+
+  // CHECKUP
 }

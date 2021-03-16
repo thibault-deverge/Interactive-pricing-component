@@ -1,7 +1,7 @@
 input[type="range"] {
   height: 46px;
   -webkit-appearance: none;
-  margin: 5.5rem 0;
+  margin-bottom: 4rem;
   width: 100%;
 }
 input[type="range"]:focus {
@@ -19,12 +19,14 @@ input[type="range"]::-webkit-slider-runnable-track {
 }
 
 input[type="range"]::-webkit-slider-thumb {
-  box-shadow: 0px 12px 50px $strongCyan;
-  // border: 0px solid #000000;
+  box-shadow: 0px 15px 30px rgba($strongCyan, 0.4);
   height: 40px;
   width: 40px;
   border-radius: 50px;
   background: $strongCyan;
+  background-image: url("/images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
   cursor: pointer;
   -webkit-appearance: none;
   margin-top: -16px;
@@ -41,15 +43,18 @@ input[type="range"]::-moz-range-track {
   box-shadow: 0px 0px 0px #000000;
   background: $softCyan;
   border-radius: 10px;
-  border: 0px solid #000000;
+  // border: 0px solid #000000;
 }
 input[type="range"]::-moz-range-thumb {
-  box-shadow: 0px 0px 2px #000000;
-  border: 0px solid #000000;
+  box-shadow: 0px 12px 50px $softCyan;
+  border: 0px solid $softCyan;
   height: 40px;
   width: 40px;
   border-radius: 50px;
   background: $strongCyan;
+  background-image: url("/images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
   cursor: pointer;
 }
 input[type="range"]::-ms-track {
@@ -75,12 +80,15 @@ input[type="range"]::-ms-fill-upper {
 }
 input[type="range"]::-ms-thumb {
   margin-top: 1px;
-  box-shadow: 0px 0px 2px #000000;
-  border: 0px solid #000000;
+  box-shadow: 0px 0px 2px $softCyan;
+  border: 0px solid $softCyan;
   height: 40px;
   width: 40px;
   border-radius: 50px;
   background: $strongCyan;
+  background-image: url("/images/icon-slider.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
   cursor: pointer;
 }
 input[type="range"]:focus::-ms-fill-lower {
