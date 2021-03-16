@@ -93,6 +93,8 @@ h1 {
   padding: 3.8rem 4.5rem;
   background-color: white;
   border-radius: 5px;
+  -webkit-box-shadow: 5px 3px 20px rgba(0, 0, 0, 0.1);
+          box-shadow: 5px 3px 20px rgba(0, 0, 0, 0.1);
 }
 
 .pricing__details {
@@ -192,11 +194,87 @@ h1 {
 .pricing hr {
   width: 54rem;
   height: 1px;
+  margin-bottom: 3.2em;
   background-color: #eaeefb;
   color: #eaeefb;
   border: none;
   -webkit-transform: translateX(-45px);
           transform: translateX(-45px);
+}
+
+.pricing__resume {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.pricing__resume--item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1rem;
+}
+
+.pricing__resume--item img {
+  width: 0.7rem;
+  height: 0.6rem;
+  margin-right: 1.6rem;
+}
+
+.pricing__resume--item p {
+  width: 15rem;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.pricing__cta {
+  margin: auto;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.pricing__cta button {
+  padding: 1.3rem 4.6rem;
+  background-color: #293356;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: white;
+  border: 0px;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.4);
+          box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.4);
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.pricing__cta button:hover {
+  -webkit-transform: translateY(-1px);
+          transform: translateY(-1px);
+  -webkit-box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 2px 3px 15px rgba(0, 0, 0, 0.2);
+}
+
+.pricing__cta button:visited, .pricing__cta button:active {
+  outline: none;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+  -webkit-box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.4);
+          box-shadow: 1px 0px 4px rgba(0, 0, 0, 0.4);
+}
+
+.pricing__cta button:focus {
+  outline: none;
 }
 
 input[type="range"] {
