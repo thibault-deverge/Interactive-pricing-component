@@ -72,13 +72,17 @@
       border-radius: 15px;
       cursor: pointer;
 
+      &.yearly {
+        background-color: $softCyan;
+      }
+
       &:focus {
         outline: none;
       }
 
       &::before {
         content: "";
-        display: inline-block;
+        display: var(--display-ib);
         position: absolute;
         top: 4px;
         left: 4px;
@@ -92,7 +96,7 @@
 
       &::after {
         content: "";
-        display: none;
+        display: var(--display-none);
         position: absolute;
         top: 4px;
         left: 2.5rem;

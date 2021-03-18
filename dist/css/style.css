@@ -1,3 +1,8 @@
+:root {
+  --display-none: none;
+  --display-ib: inline-block;
+}
+
 /* ---------------------------------- Reset --------------------------------- */
 html {
   font-size: 62.5%;
@@ -209,13 +214,17 @@ h1 {
   cursor: pointer;
 }
 
+.pricing__billing button.yearly {
+  background-color: #a5f3eb;
+}
+
 .pricing__billing button:focus {
   outline: none;
 }
 
 .pricing__billing button::before {
   content: "";
-  display: inline-block;
+  display: var(--display-ib);
   position: absolute;
   top: 4px;
   left: 4px;
@@ -229,7 +238,7 @@ h1 {
 
 .pricing__billing button::after {
   content: "";
-  display: none;
+  display: var(--display-none);
   position: absolute;
   top: 4px;
   left: 2.5rem;
